@@ -8,10 +8,6 @@
         Homepagina - CRUDExample
     </jsp:attribute>
 
-    <jsp:attribute name="css">
-        <link rel="stylesheet" href="/content/css/home.css" type="text/css" />
-    </jsp:attribute>
-
     <jsp:attribute name="content">
 
         <div class="container top-50 start-50 translate-middle position-absolute">
@@ -89,16 +85,10 @@
             </div>
         </div>
 
-        <script>
-            const verwijderen = document.getElementById('verwijderen');
-            verwijderen.addEventListener('show.bs.modal', function(event) {
-                let button = event.relatedTarget;
-                let id = button.getAttribute('data-bs-id')
-                let modalBodyInput = document.getElementById('persoon-id');
-                modalBodyInput.value = id
-            })
-        </script>
+    </jsp:attribute>
 
+    <jsp:attribute name="script">
+        <script src="content/js/home.js"></script>
     </jsp:attribute>
 
 </t:template>

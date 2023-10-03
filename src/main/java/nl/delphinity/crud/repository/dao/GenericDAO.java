@@ -1,7 +1,7 @@
-package nl.delphinity.crud.datalayer.dao;
+package nl.delphinity.crud.repository.dao;
 
 import jakarta.persistence.PersistenceException;
-import nl.delphinity.crud.datalayer.interfaces.IGenericDAO;
+import nl.delphinity.crud.repository.interfaces.IGenericDAO;
 import org.hibernate.Session;
 import org.hibernate.exception.ConstraintViolationException;
 import org.hibernate.query.criteria.JpaCriteriaQuery;

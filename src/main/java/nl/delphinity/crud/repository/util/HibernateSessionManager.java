@@ -1,4 +1,4 @@
-package nl.delphinity.crud.datalayer.util;
+package nl.delphinity.crud.repository.util;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.Metadata;

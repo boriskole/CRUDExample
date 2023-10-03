@@ -1,8 +1,8 @@
 package nl.delphinity.crud;
 
-import nl.delphinity.crud.datalayer.factories.DAOFactories;
-import nl.delphinity.crud.datalayer.factories.DAOFactory;
-import nl.delphinity.crud.datalayer.util.HibernateSessionManager;
+import nl.delphinity.crud.repository.factories.DAOFactories;
+import nl.delphinity.crud.repository.factories.DAOFactory;
+import nl.delphinity.crud.repository.util.HibernateSessionManager;
 import nl.delphinity.crud.domain.Persoon;
 
 import java.time.LocalDate;

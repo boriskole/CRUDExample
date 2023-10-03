@@ -1,4 +1,4 @@
-package nl.delphinity.crud.datalayer.interfaces;
+package nl.delphinity.crud.repository.interfaces;
 
 import nl.delphinity.crud.domain.Persoon;
 

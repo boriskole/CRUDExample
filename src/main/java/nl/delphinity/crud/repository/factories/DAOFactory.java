@@ -1,6 +1,6 @@
-package nl.delphinity.crud.datalayer.factories;
+package nl.delphinity.crud.repository.factories;
 
-import nl.delphinity.crud.datalayer.interfaces.IPersoonDAO;
+import nl.delphinity.crud.repository.interfaces.IPersoonDAO;
 
 public abstract class DAOFactory {
 

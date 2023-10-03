@@ -1,4 +1,4 @@
-package nl.delphinity.crud.datalayer.factories;
+package nl.delphinity.crud.repository.factories;
 
 public enum DAOFactories {
 

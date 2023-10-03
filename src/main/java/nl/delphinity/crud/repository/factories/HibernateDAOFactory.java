@@ -1,9 +1,9 @@
-package nl.delphinity.crud.datalayer.factories;
+package nl.delphinity.crud.repository.factories;
 
-import nl.delphinity.crud.datalayer.dao.GenericDAO;
-import nl.delphinity.crud.datalayer.dao.PersoonDAO;
-import nl.delphinity.crud.datalayer.interfaces.IPersoonDAO;
-import nl.delphinity.crud.datalayer.util.HibernateSessionManager;
+import nl.delphinity.crud.repository.dao.GenericDAO;
+import nl.delphinity.crud.repository.dao.PersoonDAO;
+import nl.delphinity.crud.repository.interfaces.IPersoonDAO;
+import nl.delphinity.crud.repository.util.HibernateSessionManager;
 import nl.delphinity.crud.domain.Persoon;
 import org.hibernate.Session;
 

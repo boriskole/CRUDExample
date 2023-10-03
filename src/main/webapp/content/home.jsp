@@ -51,7 +51,7 @@
                                 <td><s:property value="geboortedatum" /></td>
                                 <td>
                                     <button class="btn btn-primary">Wijzigen</button>
-                                    <button class="btn btn-danger">Verwijderen</button>
+                                    <button class="btn btn-danger" data-bs-id="<s:property value="id"/>" data-bs-toggle="modal" data-bs-target="#verwijderen">Verwijderen</button>
                                 </td>
                             </tr>
                         </s:iterator>
@@ -61,6 +61,43 @@
             </div>
 
         </div>
+
+        <div class="modal" tabindex="-1" id="verwijderen">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <form action="verwijderen" method="post">
+
+                        <div class="modal-header">
+                            <h1 class="mx-auto">Weet je het zeker?</h1>
+                        </div>
+
+                        <input type="hidden" id="persoon-id" name="id">
+
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary ms-auto me-3">
+                                <i class="bi bi-check-lg"></i>
+                            </button>
+                            <button type="button" class="btn btn-danger me-auto" data-bs-dismiss="modal">
+                                <i class="bi bi-x-lg"></i>
+                            </button>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const verwijderen = document.getElementById('verwijderen');
+            verwijderen.addEventListener('show.bs.modal', function(event) {
+                let button = event.relatedTarget;
+                let id = button.getAttribute('data-bs-id')
+                let modalBodyInput = document.getElementById('persoon-id');
+                modalBodyInput.value = id
+            })
+        </script>
 
     </jsp:attribute>
 

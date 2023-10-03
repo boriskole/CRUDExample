@@ -16,6 +16,10 @@
 			<result>/content/home.jsp</result>
 		</action>
 
+		<action name="verwijderen" class="nl.delphinity.crud.controller.persoon.VerwijderenAction" method="verwijderen">
+			<result type="redirect">home</result>
+		</action>
+
 	</package>
 
 </struts>	

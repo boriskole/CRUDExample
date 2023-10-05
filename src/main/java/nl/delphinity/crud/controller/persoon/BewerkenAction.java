@@ -4,7 +4,6 @@ import jakarta.transaction.Transactional;
 import nl.delphinity.crud.domain.Persoon;
 import nl.delphinity.crud.domain.PersoonDTO;
 import nl.delphinity.crud.repository.factories.DAOFactory;
-import nl.delphinity.crud.repository.util.HibernateSessionManager;
 
 import java.time.LocalDate;
 

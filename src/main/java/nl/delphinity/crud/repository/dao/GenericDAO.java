@@ -113,6 +113,14 @@ public class GenericDAO<T, ID extends Serializable> implements IGenericDAO<T, ID
         return new HashSet<>(list);
     }
 
+    @Override
+    public T merge(T entity) {
+        getSession().beginTransaction();
+        getSession().merge(entity);
+        getSession().getTransaction().commit();
+        return entity;
+    }
+
     public void flush() {
         getSession().flush();
     }

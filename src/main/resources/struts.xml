@@ -20,6 +20,10 @@
 			<result type="redirect">home</result>
 		</action>
 
+		<action name="bewerken" class="nl.delphinity.crud.controller.persoon.BewerkenAction" method="bewerken">
+			<result type="redirect">home</result>
+		</action>
+
 	</package>
 
 </struts>	

@@ -16,4 +16,6 @@ public interface IGenericDAO<T, ID extends Serializable> {
 
     Set<T> findAll();
 
+    T merge(T entity);
+
 }

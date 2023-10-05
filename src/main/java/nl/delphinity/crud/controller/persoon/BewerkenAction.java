@@ -10,8 +10,7 @@ import java.time.LocalDate;
 public class BewerkenAction {
 
     private PersoonDTO dto;
-
-    @Transactional
+    
     public String bewerken() {
 
         Persoon foundPersoon = DAOFactory.getFactory()

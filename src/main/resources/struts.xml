@@ -24,6 +24,10 @@
 			<result type="redirect">home</result>
 		</action>
 
+		<action name="toevoegen" class="nl.delphinity.crud.controller.persoon.ToevoegenAction" method="toevoegen">
+			<result type="redirect">home</result>
+		</action>
+
 	</package>
 
 </struts>	

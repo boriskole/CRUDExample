@@ -21,7 +21,9 @@
                 </div>
 
                 <div class="col text-center">
-                    <button class="btn btn-primary">+</button>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#toevoegen">
+                        +
+                    </button>
                 </div>
 
             </div>
@@ -117,6 +119,55 @@
                             <div class="form-floating mb-3">
                                 <input type="date" required class="form-control" name="dto.geboortedatum" id="bewerken-geboortedatum" placeholder="Geboortedatum">
                                 <label for="bewerken-geboortedatum">Geboortedatum</label>
+                            </div>
+
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary ms-auto me-3">
+                                <i class="bi bi-check-lg"></i>
+                            </button>
+                            <button type="button" class="btn btn-danger me-auto" data-bs-dismiss="modal">
+                                <i class="bi bi-x-lg"></i>
+                            </button>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal" tabindex="-1" id="toevoegen">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <form action="toevoegen" method="post">
+
+                        <div class="modal-header">
+                            <h1 class="mx-auto">Toevoegen</h1>
+                        </div>
+
+                        <div class="modal-body">
+
+                            <div class="form-floating mb-3">
+                                <input type="text" required class="form-control" name="dto.voornaam" id="toevoegen-voornaam" placeholder="Voornaam">
+                                <label for="toevoegen-voornaam">Voornaam</label>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" name="dto.tussenvoegsel" id="toevoegen-tussenvoegsel" placeholder="Tussenvoegsel">
+                                <label for="toevoegen-tussenvoegsel">Tussenvoegsel</label>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <input type="text" required class="form-control" name="dto.achternaam" id="toevoegen-achternaam" placeholder="Achternaam">
+                                <label for="toevoegen-achternaam">Achternaam</label>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <input type="date" required class="form-control" name="dto.geboortedatum" id="toevoegen-geboortedatum" placeholder="Geboortedatum">
+                                <label for="toevoegen-geboortedatum">Geboortedatum</label>
                             </div>
 
                         </div>
